@@ -1,0 +1,209 @@
+// ======================================================
+// layout/_hero.scss
+// ======================================================
+
+header.hero {
+  color: $gray-900;
+  background-color: $gray-100;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: $gap-xl 0;
+  position: relative;
+  overflow: hidden;
+
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 $gr-2;
+  }
+
+  // ── Two-column layout ────────────────────────────────
+  .hero-content {
+    display: flex;
+    flex-direction: row;          // text LEFT, image RIGHT
+    align-items: center;
+    gap: $gr-3;
+  }
+
+  // ── Left: Text ───────────────────────────────────────
+  .hero-text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: $gap-md 0;
+    text-align: left;
+    z-index: 2;
+  }
+
+  .section-heading {
+    @include heading-font;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.15;
+    color: $gray-900;
+    margin-bottom: $gap-md;
+  }
+
+  .hero-subheading {
+    @include body-font;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: $gray-700;
+    margin-bottom: $gap-lg;
+    max-width: 480px;
+  }
+
+  // ── Buttons ──────────────────────────────────────────
+  .hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap-sm;
+    justify-content: flex-start;
+  }
+
+  .btn {
+    @include heading-font;
+    padding: 0.75rem 1.75rem;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: $shadow-md;
+    }
+  }
+
+  .btn-primary {
+    background-color: $primary;
+    color: $white;
+    border: 2px solid $primary;
+
+    &:hover {
+      background-color: darken($primary, 10%);
+      border-color: darken($primary, 10%);
+      color: $white;
+    }
+  }
+
+  .btn-outline {
+    background-color: transparent;
+    color: $primary;
+    border: 2px solid $primary;
+
+    &:hover {
+      background-color: rgba($primary, 0.07);
+      color: darken($primary, 10%);
+    }
+  }
+
+  // ── Right: Image — square, rounded, tilted ───────────
+  .hero-image-container {
+    flex: 0 0 420px;
+    width: 420px;
+    height: 420px;
+    border-radius: 24px;
+    overflow: hidden;
+    background-image: url("/_assets/img/bond-squad-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: $shadow-lg;
+
+    // The tilt — positive = clockwise
+    transform: rotate(6deg);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+    // Slight wrapper margin so tilt doesn't get clipped
+    margin: $gap-lg $gap-lg $gap-lg 0;
+
+    &:hover {
+      transform: rotate(3deg) scale(1.02);
+      box-shadow: 0 20px 48px rgba(0, 0, 0, 0.18);
+    }
+  }
+
+  // ── Below 992px — stack vertically, image full width ─
+  @media (max-width: 992px) {
+    padding: $gap-lg 0;
+    overflow: visible;
+
+    .container {
+      padding: 0;
+      overflow: visible;
+    }
+
+    .hero-content {
+      flex-direction: column;
+      gap: $gap-lg;
+    }
+
+    // Full-bleed image — covers full screen width
+    .hero-image-container {
+      order: 1;
+      flex: none;
+      width: 100vw;
+      height: 380px;
+      max-width: 100vw;
+      margin: 0;
+      transform: none;
+      border-radius: 0;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      z-index: 1;
+      box-shadow: none;
+    }
+
+    .hero-text-container {
+      order: 2;
+      width: 100%;
+      text-align: left;
+      padding: 0 $gap-md;
+    }
+
+    .section-heading {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+    }
+
+    .hero-subheading {
+      max-width: none;
+    }
+
+    .hero-buttons {
+      flex-direction: column;
+      align-items: stretch;
+
+      .btn {
+        width: 100%;
+        min-height: 48px;
+        text-align: center;
+      }
+    }
+  }
+
+  // ── Mobile <480px ────────────────────────────────────
+  @media (max-width: 480px) {
+    .hero-image-container {
+      height: 280px;
+    }
+  }
+
+  // ── Very small <375px ────────────────────────────────
+  @media (max-width: 375px) {
+    .hero-image-container {
+      height: 220px;
+    }
+  }
+
+} // ── end header.hero ───────────────────────────────────
