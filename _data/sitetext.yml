@@ -98,18 +98,18 @@ textblock:
   footer: ""
   section: textblock
   list:
-    - title: "<strong>Plan</strong> – Get Pre-Approved – Time to ask us questions / we’ll explain everything."
-      image: "fas fa-circle"
-    - title: "<strong>Decide</strong> – Sign an Offer to Purchase."
-      image: "fas fa-circle"
-    - title: "<strong>Prepare</strong> – we obtain final required supporting documentation from you."
-      image: "fas fa-circle"
-    - title: "<strong>Apply</strong>  – we’ll apply to multiple banks (including your own bank)."
-      image: "fas fa-circle"
-    - title: "<strong>We negotiate</strong>  – to secure the very best results from each of the banks."
-      image: "fas fa-circle"
-    - title: "<strong>You choose</strong>  the best home-loan offering."
-      image: "fas fa-circle"
+  - title: "<strong>Plan</strong> – Get Pre-Approved. We take the time to answer your questions and explain every step of the journey."
+    image: "fas fa-circle"
+  - title: "<strong>Decide</strong> – Find your dream home and sign an Offer to Purchase."
+    image: "fas fa-circle"
+  - title: "<strong>Prepare</strong> – We gather the final required supporting documentation from you to ensure a bulletproof application."    
+    image: "fas fa-circle"
+  - title: "<strong>Apply</strong> – We handle the heavy lifting, applying to all major banks (including your own) at once."    
+    image: "fas fa-circle"
+  - title: "<strong ng>We negotiate</strong> – We fight to secure the most competitive interest rates and terms from each of the banks."    
+    image: "fas fa-circle"
+  - title: "<strong>You choose</strong> – Review the offers and select the home-loan package that fits your life best."
+    image: "fas fa-circle"
 
 portfolio:
   title: "Other Services"
@@ -233,11 +233,3 @@ footer:
       icon: "fab fa-instagram"
     - url: https://www.instagram.com/firstclassfinancesa
       icon: "fab fa-tiktok"
-    # - url: https://twitter.com
-    #   icon: "fab fa-twitter"
-    #- url: https://www.facebook.com/profile.php?id=61572800446272
-    #  icon: "fab fa-facebook-f"
-    # - url: https://linkedin.com
-    #   icon: "fab fa-linkedin-in"
-    # - url: https://github.com/raviriley/agency-jekyll-theme
-    #   icon: "fab fa-github"
