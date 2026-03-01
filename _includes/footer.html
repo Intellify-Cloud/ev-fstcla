@@ -1,113 +1,123 @@
 <footer id="footer">
   <div class="container">
     <div class="footer-content">
+  <!-- Brand -->
+  <div class="footer-brand">
+    <a href="{{ site.baseurl }}/" class="logo">
+      {% if site.logo %}
+        <img src="{{ site.logo.alt }}" alt="{{ site.title }}">
+      {% else %}
+        <span class="site-title">{{ site.title }}</span>
+      {% endif %}
+    </a>
+  </div>
 
-      <!-- Brand / About -->
-      <div class="footer-brand">
-        <a href="{{ site.baseurl }}/" class="logo">
-          {% if site.logo %}
-            <img src="{{ site.logo.alt }}" alt="{{ site.title }}">
-          {% else %}
-            <span class="site-title">{{ site.title }}</span>
-          {% endif %}
+  <!-- Quick Links -->
+  <div class="footer-links">
+    <h5>Quick Links</h5>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#calculators">Calculators</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Company Links -->
+  <div class="footer-links">
+    <h5>Company</h5>
+    <ul>
+      <li><a href="/privacy-statement">Privacy Statement</a></li>
+      <li><a href="/data-sharing-agreement">Data Sharing</a></li>
+      <li><a href="/legal">Privacy Policy</a></li>
+    </ul>
+  </div>
+
+  <!-- Contact -->
+  <div class="footer-contact">
+    <h5>Get in Touch</h5>
+
+    <!-- Phone -->
+    <div class="contact-item">
+      <div class="icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
+      <div class="info">
+        <a href="tel:{{ site.contact.phone | remove: ' ' }}">
+          {{ site.contact.phone }}
         </a>
-        <!-- <p class="tagline">{{ site.description | default: "Professional property finance solutions" }}</p> -->
       </div>
-
-      <!-- Quick Links -->
-      <div class="footer-links">
-        <h5>Quick Links</h5>
-        <ul>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#calculators">Calculators</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-      </div>
-
-      <!-- Company Links -->
-      <div class="footer-links">
-        <h5>Company</h5>
-        <ul>
-          <li><a href="/privacy-statement">Privacy Statement</a></li>
-          <li><a href="/data-sharing-agreement">Data Sharing</a></li>
-          <li><a href="/legal">Privacy Policy</a></li>
-          <!-- <li><a href="/blog">Blog</a></li> -->
-        </ul>
-      </div>
-
-      <!-- Contact & Social -->
-      <div class="footer-contact">
-        <h5>Get in Touch</h5>
-
-        <div class="contact-item">
-          <div class="icon"><i class="fas fa-phone"></i></div>
-          <div class="info">
-            <a href="tel:+27718247820">+27 71 824 7820</a>
-          </div>
-        </div>
-
-        <div class="contact-item">
-          <div class="icon"><i class="fas fa-envelope"></i></div>
-          <div class="info">
-            <a href="mailto:{{ site.primarycontact }}">{{ site.primarycontact }}</a>
-          </div>
-        </div>
-
-        <!-- <div class="contact-item">
-          <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
-          <div class="info">
-            <p>{{ site.address }}</p>
-          </div>
-        </div> -->
-
-        <div class="social-icons">
-          <!-- <a href="https://www.facebook.com/share/1C9Dt4PnqU/"><i class="fab fa-facebook-f"></i></a> -->
-          <!-- <a href="#"><i class="fab fa-linkedin-in"></i></a> -->
-        <a href="https://www.instagram.com/firstclassfinancesa" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-
-        <a href="https://www.tiktok.com/@firstclassfinancesa" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i>
-
-        <a 
-          href="https://api.whatsapp.com/send?phone=27845915551&text=Hi,I%20would%20like%20to%20chat%20about%20a%20homeloan." 
-          target="_blank" 
-          rel="noopener noreferrer">
-          <i class="fab fa-whatsapp fa-2x"></i>
-        </a>
-        </div>
-      </div>
-
     </div>
 
-    <div class="whatsapp-float">
-      <a 
-        href="https://api.whatsapp.com/send?phone=27845915551&text=Hi,I%20would%20like%20to%20chat%20about%20a%20homeloan." 
-        target="_blank" 
-        rel="noopener noreferrer" 
-        aria-label="Chat with us on WhatsApp">
-      <i class="fab fa-whatsapp"></i>
-        <span class="tooltip">Chat with us</span>
+    <!-- Email -->
+    <div class="contact-item">
+      <div class="icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+      <div class="info">
+        <a href="mailto:{{ site.contact.email }}">
+          {{ site.contact.email }}
+        </a>
+      </div>
+    </div>
+
+    <!-- Social -->
+    <div class="social-icons">
+
+      <a href="https://www.instagram.com/firstclassfinancesa"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
       </a>
+
+      <a href="https://www.tiktok.com/@firstclassfinancesa"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="TikTok">
+        <i class="fab fa-tiktok"></i>
+      </a>
+
+      <a href="https://api.whatsapp.com/send?phone={{ site.contact.whatsapp }}&text={{ site.whatsapp_message }}"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+
     </div>
+  </div>
 
-    <!-- Footer Bottom -->
-    <div class="footer-bottom">
-      <p>{{ 'now' | date: "%Y" }} {{ site.company }} - Experts in Bond Origination & Home Finance | Durban. All rights reserved. <br>
-        Powered by <a href="{{ site.url }}">{{ site.group }}</a></p>
-    </div>
+</div>
 
-  </div> <!-- /.container -->
+<!-- Floating WhatsApp -->
+<div class="whatsapp-float">
+  <a href="https://api.whatsapp.com/send?phone={{ site.contact.whatsapp }}&text={{ site.whatsapp_message }}"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Chat with us on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="tooltip">Chat with us</span>
+  </a>
+</div>
 
-  <!-- JavaScript -->
+<!-- Footer Bottom -->
+<div class="footer-bottom">
+  <p>
+    {{ 'now' | date: "%Y" }} {{ site.company }} —
+    Experts in Bond Origination & Home Finance | Durban.
+    All rights reserved.<br>
+    Powered by <a href="{{ site.url }}">{{ site.group }}</a>
+  </p>
+</div>
+
+  </div>
+
   <script>
     function fixPageShort() {
       if (window.innerHeight > document.body.offsetHeight) {
         const footer = document.getElementById("footer");
         footer.style.position = "fixed";
         footer.style.bottom = 0;
-        footer.style.right = 0;
         footer.style.left = 0;
+        footer.style.right = 0;
         footer.style.width = "100%";
       }
     }

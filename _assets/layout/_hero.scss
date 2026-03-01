@@ -1,6 +1,7 @@
 // ======================================================
 // layout/_hero.scss
 // ======================================================
+@use '../abstracts/variables' as *;
 
 header.hero {
   color: $gray-900;
@@ -9,7 +10,7 @@ header.hero {
   align-items: center;
   width: 100%;
   height: auto;
-  padding: $gap-xl 0;
+  padding: calc(#{$gap-xl} + 70px) 0 $gap-xl 0;
   position: relative;
   overflow: hidden;
 
@@ -60,15 +61,16 @@ header.hero {
   }
 
   // ── Buttons ──────────────────────────────────────────
-  .hero-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: $gap-sm;
-    justify-content: flex-start;
-  }
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gap-sm;
+  justify-content: flex-start; // back to left, matches text
+}
 
   .btn {
     @include heading-font;
+    width: 150px;
     padding: 0.75rem 1.75rem;
     border-radius: 50px;
     font-size: 0.95rem;
@@ -79,6 +81,7 @@ header.hero {
     display: inline-block;
     text-align: center;
     cursor: pointer;
+    
 
     &:hover {
       transform: translateY(-2px);
@@ -115,14 +118,14 @@ header.hero {
     width: 420px;
     height: 420px;
     border-radius: 24px;
-    position: relative; 
-    
-    // This creates a new stacking context so the card stays 
+    position: relative;
+
+    // This creates a new stacking context so the card stays
     // behind the image but doesn't disappear into the page background
-    isolation: isolate; 
-    
+    isolation: isolate;
+
     // VISIBLE allows the offset card to show outside the bounds
-    overflow: visible; 
+    overflow: visible;
 
     // The Tilt
     transform: rotate(6deg);
@@ -130,7 +133,7 @@ header.hero {
     margin: $gap-lg $gap-lg $gap-lg 0;
 
     // ── THE IMAGE LAYER ──
-    // We use a pseudo-element for the image itself to ensure 
+    // We use a pseudo-element for the image itself to ensure
     // it sits ON TOP of the primary colored card.
     &::after {
       content: "";
@@ -153,9 +156,9 @@ header.hero {
       background-color: $primary;
       border-radius: 24px;
       z-index: 1; // Card is behind the image (z-index 2)
-      
+
       // Offset by 5 degrees relative to parent
-      transform: rotate(-5deg); 
+      transform: rotate(-5deg);
       transition: transform 0.4s ease;
     }
 
@@ -168,9 +171,10 @@ header.hero {
   }
 
   // ── Tablet / Mobile Logic ────────────────────────────
-  @media (max-width: 992px) {
-    padding: $gap-lg 0;
+    @media (max-width: 992px) {
+    padding: 0 0 $gap-lg 0;
     overflow: visible;
+    margin-top: 0px;
 
     .container {
       padding: 0;
@@ -178,7 +182,7 @@ header.hero {
 
     .hero-content {
       flex-direction: column;
-      flex-wrap: wrap; 
+      flex-wrap: wrap;
       gap: $gap-lg;
     }
 
@@ -189,14 +193,14 @@ header.hero {
       height: 380px;
       margin: 0;
       transform: none;
-      
+
       &::after {
         border-radius: 0;
         box-shadow: none;
       }
 
       &::before {
-        display: none; // Hide blue card on mobile
+        display: none;
       }
     }
 
