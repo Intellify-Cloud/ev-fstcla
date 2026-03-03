@@ -1,364 +1,457 @@
 <!-- Contact -->
-<section class="bg-light contact-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Contact</h2>
-                <h3 class="section-subheading text-muted"></h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <form id="contactForm" class="contact-form">
-                    <div style="position: absolute; left: -9999px;" aria-hidden="true">
-                        <label for="location">Location</label>
-                        <input id="location" name="location" type="text" tabindex="-1" autocomplete="off" />
-                    </div>
+<section class="contact-section">
+  <div class="contact-inner">
 
-                    <div class="name-row">
-                        <div class="form-group">
-                            <label for="firstName">First Name *</label>
-                            <input id="firstName" name="firstName" type="text" class="form-control" />
-                            <span class="error-message" id="error-firstName"></span>
-                        </div>
+    <!-- LEFT COLUMN -->
+    <div class="contact-left">
+      <h2 class="contact-heading">We're here to help.</h2>
+      <p class="contact-sub">First-time buyer or refinancing? We'll guide you through every step.</p>
 
-                        <div class="form-group">
-                            <label for="lastName">Last Name *</label>
-                            <input id="lastName" name="lastName" type="text" class="form-control" />
-                            <span class="error-message" id="error-lastName"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="emailAddress">Email Address *</label>
-                        <input id="emailAddress" name="emailAddress" type="email" class="form-control" />
-                        <span class="error-message" id="error-emailAddress"></span>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="phoneNumber">Phone Number (optional)</label>
-                        <input id="phoneNumber" name="phoneNumber" type="tel" class="form-control" />
-                    </div>
-
-                    <div class="form-group">
-                        <label for="loanOption">I want to *</label>
-                        <select id="loanOption" name="loanOption" class="form-control" style="accent-color: #19a3b8;">
-                            <option value="">Please select an option</option>
-                            <option value="Get pre-approved">Get pre-approved</option>
-                            <option value="Apply for a homeloan">Apply for a homeloan</option>
-                        </select>
-                        <span class="error-message" id="error-loanOption"></span>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="content">Message *</label>
-                        <textarea id="content" name="content" rows="5" class="form-control"></textarea>
-                        <span class="error-message" id="error-content"></span>
-                    </div>
-
-                    <div id="status-sent" class="status-message success" style="display: none;">
-                        Thank you! Your message has been sent successfully.
-                    </div>
-                    <div id="status-error" class="status-message error" style="display: none;">
-                        Sorry, there was an error sending your message. Please try again.
-                    </div>
-
-                    <button type="submit" id="submitBtn" class="btn btn-primary">
-                        Send Message
-                    </button>
-                </form>
-            </div>
-        </div>
+      <div class="info-card">
+        <h3>Office Hours</h3>
+        <p>Mon – Fri: 08:00am – 05:00pm</p>
+        <p>Sat: 09:00am – 01:00pm</p>
+        <p>Sunday: Closed</p>
+        <p>Public Holidays</p>
+      </div>
     </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="contact-right">
+      <form id="contactForm" class="contact-form">
+
+        <!-- Honeypot -->
+        <div style="position:absolute;left:-9999px;" aria-hidden="true">
+          <label for="location">Location</label>
+          <input id="location" name="location" type="text" tabindex="-1" autocomplete="off" />
+        </div>
+
+        <div class="name-row">
+          <div class="form-group">
+            <label for="firstName">First Name <span class="req">*</span></label>
+            <input id="firstName" name="firstName" type="text" class="form-control" placeholder="Jane" />
+            <span class="error-message" id="error-firstName"></span>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name <span class="req">*</span></label>
+            <input id="lastName" name="lastName" type="text" class="form-control" placeholder="Smith" />
+            <span class="error-message" id="error-lastName"></span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="emailAddress">Email Address <span class="req">*</span></label>
+          <input id="emailAddress" name="emailAddress" type="email" class="form-control" placeholder="jane@example.com" />
+          <span class="error-message" id="error-emailAddress"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="phoneNumber">Phone Number <span class="optional">(optional)</span></label>
+          <input id="phoneNumber" name="phoneNumber" type="tel" class="form-control" placeholder="+27 82 000 0000" />
+        </div>
+
+        <div class="form-group">
+          <label for="content">Message <span class="req">*</span></label>
+          <textarea id="content" name="content" rows="4" class="form-control" placeholder="Tell us a bit about your situation…"></textarea>
+          <span class="error-message" id="error-content"></span>
+        </div>
+
+        <div id="status-sent" class="status-message success" style="display:none;">
+          ✓ Thank you! Your message has been sent successfully.
+        </div>
+        <div id="status-error" class="status-message error" style="display:none;">
+          ✕ Sorry, something went wrong. Please try again.
+        </div>
+
+        <button type="submit" id="submitBtn" class="btn-submit">Send Message</button>
+
+      </form>
+    </div>
+
+  </div>
 </section>
 <!-- End Contact -->
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+  .contact-section {
+    background-color: #f7f8fa;
+    padding: 80px 24px;
+    font-family: "Poppins", Arial, sans-serif;
+  }
+
+  .contact-inner {
+    max-width: 1040px;
+    margin: 0 auto;
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+  }
+
+  /* ── LEFT ── */
+  .contact-left {
+    flex: 0 0 340px;
+    max-width: 340px;
+  }
+
+  .contact-heading {
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 1.15;
+    color: #002d62;
+    margin: 0 0 16px;
+    letter-spacing: -0.5px;
+    font-family: "Poppins", Arial, sans-serif;
+  }
+
+  .contact-sub {
+    font-size: 0.95rem;
+    color: #003366;
+    line-height: 1.6;
+    margin: 0 0 32px;
+    font-family: "Poppins", Arial, sans-serif;
+  }
+
+  .info-card {
+    background: #b4e1f5;
+    border-radius: 20px;
+    padding: 10px 40px  40px;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+
+  .info-card h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 0 0 0px;
+    letter-spacing: 0.03em;
+    font-family: "Poppins", Arial, sans-serif;
+  }
+
+  .info-card p {
+    font-size: 0.9rem;
+    margin: 0 0 6px;
+    opacity: 0.92;
+    line-height: 1.5;
+    font-family: "Poppins", Arial, sans-serif;
+  }
+
+  .info-card p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* ── RIGHT ── */
+  .contact-right {
+    flex: 1;
+  }
+
+  .contact-form {
+    background: #eef0f3;
+    border-radius: 20px;
+    padding: 36px 40px;
+    position: relative;
+  }
+
+  .name-row {
+    display: flex;
+    gap: 16px;
+  }
+
+  .name-row .form-group {
+    flex: 1;
+  }
+
+  .form-group {
+    margin-bottom: 18px;
+  }
+
+  .form-group label {
+    display: block;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #002d62;
+    margin-bottom: 6px;
+    letter-spacing: 0.01em;
+    font-family: "Poppins", Arial, sans-serif;
+  }
+
+  .req {
+    color: #7fb5c9;
+  }
+
+  .optional {
+    font-weight: 400;
+    color: #999;
+    font-size: 0.78rem;
+  }
+
+  .form-control {
+    width: 100%;
+    padding: 11px 16px;
+    background: #fff;
+    border: 1.5px solid transparent;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-family: "Poppins", Arial, sans-serif;
+    color: #222;
+    box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+  }
+
+  .form-control::placeholder {
+    color: #bbb;
+  }
+
+  .form-control:focus {
+    border-color: #7fb5c9;
+    box-shadow: 0 0 0 3px rgba(0, 147, 201, 0.12);
+  }
+
+  .form-control.error {
+    border-color: #e53935;
+  }
+
+  .select-wrapper {
+    position: relative;
+  }
+
+  .select-wrapper select.form-control {
+    appearance: none;
+    cursor: pointer;
+    padding-right: 2.5rem;
+  }
+
+  .select-arrow {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+
+  textarea.form-control {
+    resize: vertical;
+    min-height: 110px;
+  }
+
+  .error-message {
+    display: block;
+    color: #e53935;
+    font-size: 0.78rem;
+    margin-top: 4px;
+    min-height: 1.1rem;
+  }
+
+  .status-message {
+    padding: 12px 16px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    font-size: 0.88rem;
+    font-weight: 500;
+  }
+
+  .status-message.success {
+    background: #e0f4fb;
+    color: #006f99;
+    border: 1px solid #99d4ee;
+  }
+
+  .status-message.error {
+    background: #ffebee;
+    color: #c62828;
+    border: 1px solid #ef9a9a;
+  }
+
+  .btn-submit {
+    background: #0093c9;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 13px 32px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    font-family: "Poppins", Arial, sans-serif;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+  }
+
+  .btn-submit:hover:not(:disabled) {
+    background: #007faf;
+    transform: translateY(-1px);
+  }
+
+  .btn-submit:disabled {
+    background: #80c9e4;
+    cursor: not-allowed;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 780px) {
     .contact-section {
-        padding: 20px;
+      padding: 48px 16px;
+    }
+
+    .contact-inner {
+      flex-direction: column;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .contact-left {
+      flex: none;
+      max-width: 100%;
+      width: 100%;
+      text-align: center;
+    }
+
+    .contact-heading {
+      font-size: 1.8rem;
+    }
+
+    .contact-sub {
+      font-size: 0.9rem;
+    }
+
+    .info-card {
+      text-align: left;
+    }
+
+    .contact-right {
+      width: 100%;
+      box-sizing: border-box;
     }
 
     .contact-form {
-        width: 100%;
-        max-width: 600px;
-        text-align: left;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .form-group {
-        margin-bottom: 0.25rem;
-    }
-
-    .form-group label {
-        display: block;
-        margin-bottom: 0.5rem;
-        font-weight: 500;
-    }
-
-    .form-control {
-        width: 100%;
-        /* padding: 0.75rem; */
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        font-size: 1rem;
-        font-family: inherit;
-        transition: border-color 0.2s;
-    }
-
-    .form-control:focus {
-        outline: none;
-        border-color: #19a3b8;
-        box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.1);
-    }
-
-    .form-control.error {
-        border-color: #d32f2f;
-    }
-
-    select.form-control {
-        cursor: pointer;
-        accent-color: white;
-        appearance: none;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
-        background-repeat: no-repeat;
-        background-position: right 0.75rem center;
-        padding-right: 2.5rem;
-
-        option {
-            background-color: white;
-            color: #333;
-            padding: 0.5rem;
-        }
-    }
-
-    textarea.form-control {
-        resize: vertical;
-        min-height: 120px;
-    }
-
-    .error-message {
-        display: block;
-        color: #d32f2f;
-        font-size: 0.875rem;
-        margin-top: 0.25rem;
-        min-height: 1.25rem;
-    }
-
-    .status-message {
-        padding: 1rem;
-        border-radius: 4px;
-        margin-bottom: 1rem;
-        font-size: 0.95rem;
-    }
-
-    .status-message.success {
-        background-color: #e8f5e9;
-        color: #2e7d32;
-        border: 1px solid #a5d6a7;
-    }
-
-    .status-message.error {
-        background-color: #ffebee;
-        color: #c62828;
-        border: 1px solid #ef9a9a;
-    }
-
-    .btn {
-        padding: 0.75rem 1.5rem;
-        border-radius: 50px;
-        transition: all 0.3s ease;
-        text-decoration: none;
-        display: inline-block;
-        text-align: center;
-        font-weight: 400;
-    }
-
-    .btn-primary {
-        background-color: #19a3b8;
-        color: white;
-        border: none;
-    }
-
-    .btn-primary:hover:not(:disabled) {
-        transform: translateY(-1px);
-    }
-
-    .btn-primary:disabled {
-        background-color: #90caf9;
-        cursor: not-allowed;
+      padding: 28px 20px;
+      border-radius: 16px;
+      box-sizing: border-box;
     }
 
     .name-row {
-        display: flex;
-        flex-direction: column;
-        gap: 0;
+      flex-direction: column;
+      gap: 0;
     }
-
-    @media (min-width: 768px) {
-        .contact-form {
-            width: 50%;
-        }
-
-        .name-row {
-            flex-direction: row;
-            gap: 1rem;
-        }
-
-        .name-row .form-group {
-            flex: 1;
-        }
-    }
+  }
 </style>
 
 <script>
-    (function () {
-        'use strict';
+  (function () {
+    'use strict';
 
-        const form = document.getElementById('contactForm');
-        const API_URL = '{{ site.broadsheetApiUrl }}';
+    const form = document.getElementById('contactForm');
+    const API_URL = '{{ site.broadsheetApiUrl }}';
+    const submitBtn = document.getElementById('submitBtn');
+    const statusSent = document.getElementById('status-sent');
+    const statusError = document.getElementById('status-error');
 
-        const submitBtn = document.getElementById('submitBtn');
-        const statusSent = document.getElementById('status-sent');
-        const statusError = document.getElementById('status-error');
+    const fields = {
+      firstName: document.getElementById('firstName'),
+      lastName: document.getElementById('lastName'),
+      emailAddress: document.getElementById('emailAddress'),
+      phoneNumber: document.getElementById('phoneNumber'),
+      location: document.getElementById('location'),
+      content: document.getElementById('content')
+    };
 
-        const fields = {
-            firstName: document.getElementById('firstName'),
-            lastName: document.getElementById('lastName'),
-            emailAddress: document.getElementById('emailAddress'),
-            phoneNumber: document.getElementById('phoneNumber'),
-            location: document.getElementById('location'),
-            loanOption: document.getElementById('loanOption'),
-            content: document.getElementById('content')
+    const errors = {
+      firstName: document.getElementById('error-firstName'),
+      lastName: document.getElementById('error-lastName'),
+      emailAddress: document.getElementById('error-emailAddress'),
+      content: document.getElementById('error-content')
+    };
+
+    function clearErrors() {
+      Object.keys(errors).forEach(function (key) {
+        errors[key].textContent = '';
+        if (fields[key]) fields[key].classList.remove('error');
+      });
+      statusSent.style.display = 'none';
+      statusError.style.display = 'none';
+    }
+
+    function setError(field, message) {
+      errors[field].textContent = message;
+      fields[field].classList.add('error');
+    }
+
+    function isValidEmail(email) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
+    function validateForm() {
+      let isValid = true;
+      clearErrors();
+
+      if (!fields.firstName.value.trim()) { setError('firstName', 'First name is required'); isValid = false; }
+      if (!fields.lastName.value.trim()) { setError('lastName', 'Last name is required'); isValid = false; }
+
+      if (!fields.emailAddress.value.trim()) {
+        setError('emailAddress', 'Email address is required'); isValid = false;
+      } else if (!isValidEmail(fields.emailAddress.value)) {
+        setError('emailAddress', 'Please enter a valid email address'); isValid = false;
+      }
+
+            if (!fields.content.value.trim()) { setError('content', 'Message is required'); isValid = false; }
+
+      return isValid;
+    }
+
+    async function handleSubmit(e) {
+      e.preventDefault();
+      if (!validateForm()) return;
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending…';
+
+      try {
+        const body = {
+          name: fields.firstName.value.trim() + ' ' + fields.lastName.value.trim(),
+          emailAddress: fields.emailAddress.value.trim(),
+          phoneNumber: fields.phoneNumber.value.trim(),
+          location: fields.location.value,
+          content: fields.content.value.trim()
         };
 
-        const errors = {
-            firstName: document.getElementById('error-firstName'),
-            lastName: document.getElementById('error-lastName'),
-            emailAddress: document.getElementById('error-emailAddress'),
-            loanOption: document.getElementById('error-loanOption'),
-            content: document.getElementById('error-content')
-        };
-
-        function clearErrors() {
-            Object.keys(errors).forEach(function (key) {
-                errors[key].textContent = '';
-                fields[key].classList.remove('error');
-            });
-            statusSent.style.display = 'none';
-            statusError.style.display = 'none';
-        }
-
-        function setError(field, message) {
-            errors[field].textContent = message;
-            fields[field].classList.add('error');
-        }
-
-        function validateForm() {
-            let isValid = true;
-            clearErrors();
-
-            if (!fields.firstName.value.trim()) {
-                setError('firstName', 'First name is required');
-                isValid = false;
-            }
-
-            if (!fields.lastName.value.trim()) {
-                setError('lastName', 'Last name is required');
-                isValid = false;
-            }
-
-            if (!fields.emailAddress.value.trim()) {
-                setError('emailAddress', 'Email address is required');
-                isValid = false;
-            } else if (!isValidEmail(fields.emailAddress.value)) {
-                setError('emailAddress', 'Please enter a valid email address');
-                isValid = false;
-            }
-
-            if (!fields.loanOption.value) {
-                setError('loanOption', 'Please select an option');
-                isValid = false;
-            }
-
-            if (!fields.content.value.trim()) {
-                setError('content', 'Message is required');
-                isValid = false;
-            }
-
-            return isValid;
-        }
-
-        function isValidEmail(email) {
-            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            return re.test(email);
-        }
-
-        function resetForm() {
-            form.reset();
-            clearErrors();
-        }
-
-        async function handleSubmit(e) {
-            e.preventDefault();
-
-            if (!validateForm()) {
-                return;
-            }
-
-            submitBtn.disabled = true;
-            submitBtn.textContent = 'Sending...';
-            clearErrors();
-
-            try {
-                const body = {
-                    name: fields.firstName.value.trim() + ' ' + fields.lastName.value.trim(),
-                    emailAddress: fields.emailAddress.value.trim(),
-                    phoneNumber: fields.phoneNumber.value.trim(),
-                    location: fields.location.value,
-                    loanOption: fields.loanOption.value,
-                    content: `(${fields.loanOption.value})<br>${fields.content.value.trim()}`
-                };
-
-                const response = await fetch(API_URL + '/v1/messages', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(body)
-                });
-
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-
-                resetForm();
-                statusSent.style.display = 'block';
-                statusSent.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-
-            } catch (error) {
-                console.error('Error submitting form:', error);
-                statusError.style.display = 'block';
-                statusError.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-
-            } finally {
-                submitBtn.disabled = false;
-                submitBtn.textContent = 'Send Message';
-            }
-        }
-
-        form.addEventListener('submit', handleSubmit);
-
-        Object.keys(fields).forEach(function (key) {
-            if (errors[key]) {
-                fields[key].addEventListener('input', function () {
-                    if (this.value.trim() || (this.tagName === 'SELECT' && this.value)) {
-                        errors[key].textContent = '';
-                        this.classList.remove('error');
-                    }
-                });
-            }
+        const response = await fetch(API_URL + '/v1/messages', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(body)
         });
 
-    })();
+        if (!response.ok) throw new Error('Network error');
+
+        form.reset();
+        clearErrors();
+        statusSent.style.display = 'block';
+        statusSent.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+      } catch (err) {
+        console.error(err);
+        statusError.style.display = 'block';
+        statusError.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send Message';
+      }
+    }
+
+    form.addEventListener('submit', handleSubmit);
+
+    Object.keys(fields).forEach(function (key) {
+      if (errors[key] && fields[key]) {
+        fields[key].addEventListener('input', function () {
+          if (this.value.trim() || (this.tagName === 'SELECT' && this.value)) {
+            errors[key].textContent = '';
+            this.classList.remove('error');
+          }
+        });
+      }
+    });
+
+  })();
 </script>
