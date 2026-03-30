@@ -3,7 +3,7 @@
 // ======================================================
 
 footer {
-  font-family: 'Poppins', sans-serif; 
+  font-family: $font-family-base; 
   background-color: $font-color-1;
   color: #ffffff;
   padding: $gap-xl 0 $gap-lg;
@@ -89,7 +89,7 @@ footer {
         p, a {
           margin: 0;
           color: #ffffff;
-          font-family: 'Poppins', sans-serif;
+          font-family: $font-family-base;
           font-size: 14px; 
           line-height: 1.5;
         }
@@ -125,7 +125,7 @@ footer {
     text-align: center;
     
     p {
-      font-family: 'Poppins', sans-serif;
+      font-family: $font-family-base;
       font-size: 14px; 
       color: #ffffff;
       margin: 0;

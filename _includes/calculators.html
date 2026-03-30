@@ -16,13 +16,13 @@
           <div class="calculator-icon">
             <i class="{{ service.icon | default: 'fas fa-calculator' }}"></i>
           </div>
-          <h4 class="calculator-title">{{ service.title | markdownify }}</h4>
+          <h3 class="calculator-title">{{ service.title }}</h3>
           {% if service.desc %}
             <p class="calculator-desc">{{ service.desc | markdownify }}</p>
           {% endif %}
           {% if service.link %}
             <div class="calculator-footer">
-              <a href="{{ service.link.url }}" class="btn btn-outline-primary btn-xl text-uppercase shadow">
+              <a href="{{ service.link.url }}" class="btn btn-primary">
                 {{ service.link.text }}
               </a>
             </div>

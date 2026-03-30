@@ -5,8 +5,6 @@ email: bond.squad@evogroup.co.za
 description: Discover your dream home with First Class Finance! Our expert bond originators unlock the best home loan deals tailored to you, making your property journey seamless and exciting. Start building your future today!
 author: E.Roux / P.Oosthuizen
 
-analytics:
-  google: G-XXX
 
 collections:
   portfolio:
@@ -39,4 +37,4 @@ url: https://evohomeloans.co.za
 
 address: Durban
 
-broadsheetApiUrl: https://ca-broadsheet-webapi.mangodesert-1e0c2940.westeurope.azurecontainerapps.io/
+broadsheetApiUrl: "https://ca-broadsheet-webapi.mangodesert-1e0c2940.westeurope.azurecontainerapps.io/"

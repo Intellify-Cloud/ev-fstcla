@@ -4,16 +4,16 @@
 
 // Font Mixins
 @mixin serif-font {
-  font-family: "Poppins", cursive;
+  font-family: $font-family-base;
 }
 @mixin script-font {
-  font-family: "Poppins", cursive;
+  font-family: $font-family-base;
 }
 @mixin body-font {
-  font-family: "Poppins", cursive;
+  font-family: $font-family-base;
 }
 @mixin heading-font {
-  font-family: "Poppins", cursive;
+  font-family: $font-family-base;
 }
 
 // Breakpoints
