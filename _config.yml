@@ -1,0 +1,44 @@
+baseurl: ""
+url: https://firstclassfinancesa.co.za
+
+title: First Class Finance
+email: firstclassfinance@evogroup.co.za
+description: First Class Finance is a Durban-based bond origination and home-loan assistance service helping South African buyers with pre-qualification guidance, bond applications and refinancing enquiries.
+author: E.Roux / P.Oosthuizen
+
+
+collections:
+  portfolio:
+
+markdown: kramdown
+
+webserver_headers:
+  - - Access-Control-Allow-Origin
+    - "*"
+  - - Access-Control-Allow-Methods
+    - GET, OPTIONS, HEAD
+
+logo:
+  path: /assets/img/logo/first-class-finance-logo.png
+  alt: /assets/img/logo/first-class-finance-logo-bw.png
+
+exclude: [node_modules, webpack-config.js, package.json, package-lock.json]
+
+group: evo Home Loans
+powered_by_url: https://evohomeloans.co.za
+
+company: First Class Finance
+
+holding_page:
+  enabled: true
+  mode: unavailable # construction or unavailable
+
+contact:
+  phone: 084 591 5551
+  email: firstclassfinance@evogroup.co.za
+  whatsapp: 27845915551
+  whatsapp_message: Hi,I%20would%20like%20to%20chat%20about%20a%20homeloan.
+
+address: Durban
+
+broadsheetApiUrl: https://api.broadsheet.intellify.co.za

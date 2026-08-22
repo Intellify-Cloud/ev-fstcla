@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://firstclassfinancesa.co.za/sitemap.xml
+Host: firstclassfinancesa.co.za

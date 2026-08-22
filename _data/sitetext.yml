@@ -1,0 +1,269 @@
+header:
+  title: "Home Loan and Bond Origination Help in Durban"
+  text: "First Class Finance helps South African home buyers compare home-loan options, prepare stronger bond applications and understand the process from pre-qualification to registration. We are bond originators, not a lender, so approval, rates and terms remain subject to each bank's assessment."
+  highlights:
+    - title: "Bond Origination"
+      icon: "fas fa-home"
+    - title: "Pre-qualification Guidance"
+      icon: "fas fa-tasks"
+    - title: "Refinancing Enquiries"
+      icon: "fas fa-exchange-alt"
+
+holding_page:
+  construction:
+    label: "Coming Soon"
+    title: "Site coming soon"
+    text: "We are getting everything ready. Please check back shortly."
+    contact_text: "For urgent enquiries, contact us at firstclassfinance@evogroup.co.za."
+  unavailable:
+    label: "Offline..."
+    title: "Site temporarily unavailable"
+    text: "This website is currently offline."
+    contact_text: ""
+
+expert:
+  title: "Buy with Confidence"
+  text: "A clear pre-qualification conversation can help you plan your budget, understand affordability and prepare for the documents lenders may request."
+  button 1 text: ""
+  button 2 text: ""
+
+nocharge:
+  title: "No Charge for our Service"
+  text: "We earn a once-off fee from the bank when a qualifying home loan registers. Ask us what applies to your enquiry before you proceed."
+  button 1 text: ""
+  button 2 text: ""
+
+services:
+  title: "Home Loan Services"
+  text: "We assist home buyers, existing homeowners and self-employed applicants with practical bond origination support across South Africa, with a Durban-based team."
+  section: services
+  list:
+    - title: "Pre-qualification guidance"
+      desc: "Before you start viewing properties, we help you understand your likely affordability range, the documents banks may request and the factors that can affect a home-loan application."
+      icon: fas fa-tasks
+      link:
+        url: /contact/
+        text: "Request pre-qualification help"
+    - title: "Bond origination"
+      desc: "We prepare and submit your bond application to relevant banks, help compare offers and explain the next steps. Final approval, interest rates and conditions are determined by the lender."
+      icon: fas fa-home
+      link:
+        url: /contact/
+        text: "Start a bond enquiry"
+    - title: "Refinancing and switch enquiries"
+      desc: "If you already have a home loan, we can help you ask the right refinancing or switching questions, understand the process and prepare an enquiry for lender assessment."
+      icon: fas fa-exchange-alt
+      link:
+        url: /contact/
+        text: "Ask about refinancing"
+
+articles:
+  title: "Articles"
+  text: ""
+  section: articles
+
+calculators:
+  title: "Home Loan Calculators"
+  text: "Use these calculators to estimate affordability, monthly repayments and common bond-related costs. Calculator results are estimates and do not replace a lender assessment."
+  section: calculators
+  list:
+    - title: "Affordability Calculator"
+      desc: "Estimate how much home loan you may be able to afford."
+      icon: fas fa-calculator
+      link:
+        url: /affordability-calculator/
+        text: "Estimate affordability"
+    - title: "Bond Repayment Calculator"
+      desc: "Estimate monthly bond repayments at different loan amounts, terms and rates."
+      icon: fas fa-calculator
+      link:
+        url: /bond-calculator/
+        text: "Estimate repayments"
+    - title: "Transfer Cost Calculator"
+      desc: "Estimate bond registration and transfer costs for a property purchase."
+      icon: fas fa-calculator
+      link:
+        url: /transfer-cost-calculator/
+        text: "Estimate costs"
+
+more-calculators:
+  title: "More Calculators"
+  section: more-calculators
+  list:
+    - title: "Amortisation Calculator"
+      desc: "See how capital and interest can change over the life of a home loan."
+      icon: fas fa-calculator
+      link:
+        url: /amortisation-calculator/
+        text: "View amortisation"
+    - title: "Deposit Savings Calculator"
+      desc: "Estimate how much to save toward a deposit and how long it may take."
+      icon: fas fa-calculator
+      link:
+        url: /deposit-savings-calculator/
+        text: "Plan a deposit"
+    - title: "Additional Payment Calculator"
+      desc: "Estimate the effect of paying extra into a home loan."
+      icon: fas fa-calculator
+      link:
+        url: /additional-payment-calculator/
+        text: "Estimate savings"
+
+textblock:
+  title: "How the Bond Application Process Works"
+  text: ""
+  footer: "Credit approval, bond registration timelines, interest rates and conditions depend on the bank, the property, affordability checks, credit profile and required documentation."
+  section: textblock
+  list:
+    - title: "<strong>Plan</strong> - Ask for pre-qualification guidance before you make an offer."
+      image: "fas fa-circle"
+    - title: "<strong>Decide</strong> - Find a property and sign an Offer to Purchase when you are ready."
+      image: "fas fa-circle"
+    - title: "<strong>Prepare</strong> - Gather identity, income, bank statement and property documents required by lenders."
+      image: "fas fa-circle"
+    - title: "<strong>Apply</strong> - We submit your application to relevant banks for assessment."
+      image: "fas fa-circle"
+    - title: "<strong>Compare offers</strong> - We help you understand rate, repayment and condition differences."
+      image: "fas fa-circle"
+    - title: "<strong>You choose</strong> - Select the home-loan offer that fits your needs, subject to lender terms."
+      image: "fas fa-circle"
+
+portfolio:
+  title: "Other Services"
+  text: "Some of our work"
+  section: portfolio
+  closebutton: "Close"
+
+about:
+  title: "About First Class Finance"
+  text2: "First Class Finance is a Durban-based bond origination team that assists South African home buyers with home-loan enquiries, pre-qualification guidance and bond applications.<br><br>We help clients understand the information banks normally assess, prepare the supporting documents for an application and compare lender responses in plain language. We do not issue loans ourselves and we do not make approval decisions.<br><br>The team supports first-time buyers, existing homeowners, buyers considering refinancing or switching, and applicants who want guidance before they make an offer on a property."
+  text3: "Need help with a home-loan question? Contact us for a practical next step."
+
+clients:
+  title: "We Submit Applications to Major South African Banks"
+  title2: "Experienced, Knowledgeable & Dedicated to Customer Service"
+  text: "Lender participation, approval and pricing depend on each bank's assessment criteria."
+  section: clients
+  max-height: 120px
+  horizontal-scrolling: ""
+  list:
+    - title: "ABSA"
+      url: https://www.absa.co.za
+      logo: assets/img/clients/absa-bw.png
+    - title: "FNB"
+      url: https://www.fnb.co.za/
+      logo: assets/img/clients/fnb-n.png
+    - title: "Housing Investment Partners"
+      url: https://www.hiphousing.co.za/
+      logo: assets/img/clients/hip.jpg
+    - title: "Investec"
+      url: https://www.investec.co.za/
+      logo: assets/img/clients/investec.png
+    - title: "Nedbank"
+      url: https://www.nedbank.co.za
+      logo: assets/img/clients/nedbank-bw.png
+    - title: "Rand Merchant Bank"
+      url: https://www.rmb.co.za
+      logo: assets/img/clients/rmb-img-n.png
+    - title: "Standard Bank"
+      url: https://www.standardbank.co.za/
+      logo: assets/img/clients/SBSA-bw.png
+    - title: "Sentinal Homes"
+      url: https://www.sentinelhomes.co.za/
+      logo: assets/img/clients/sentinal-homes.png
+
+experienced:
+  title: "Clear Guidance Before You Apply"
+  text: "We help salaried and self-employed applicants understand what lenders may look for, what documents may be needed and what happens after an enquiry."
+
+team:
+  title: "The Team"
+  text: "Speak to the First Class Finance team about your home-buying, bond application or refinancing question."
+  section: team
+  people:
+    - name: "Office Hours"
+      role: ""
+      image: assets/img/team/office-hours.png
+      bio: "Mon to Fri: 9 AM to 5 PM<br>Sat, Sun & Public Holidays: Closed<br>Need urgent assistance after hours? Contact Eveshan Venkatasami directly on 061 206 6724."
+      social:
+        - url: tel:+27612066724
+          icon: fas fa-phone
+        - url: mailto:firstclassfinance@evogroup.co.za?subject=First Class Finance Website Enquiry
+          icon: fas fa-envelope
+        - url: https://wa.me/+27612066724
+          icon: fab fa-whatsapp
+    - name: "Eveshan<br>Venkatasami"
+      role: "Director"
+      image: assets/img/team/eveshan-profile.png
+      bio: "Dedicated to providing personalised financial solutions and guiding clients through the bond application process."
+      social:
+        - url: tel:+27612066724
+          icon: fas fa-phone
+        - url: mailto:firstclassfinance@evogroup.co.za?subject=First Class Finance Website Enquiry
+          icon: fas fa-envelope
+        - url: https://wa.me/+27612066724
+          icon: fab fa-whatsapp
+    - name: "Venetia<br>Murugan"
+      role: "Operations and Sales Support"
+      image: assets/img/team/venitia-profile.png
+      bio: "Assists clients with home-loan origination support and application coordination."
+      social:
+        - url: tel:+27845915551
+          icon: fas fa-phone
+        - url: mailto:firstclassfinance@evogroup.co.za?subject=First Class Finance Website Enquiry
+          icon: fas fa-envelope
+        - url: https://wa.me/+27845915551
+          icon: fab fa-whatsapp
+    - name: "Kaylene<br>Ramgarib"
+      role: "Bond Consultant"
+      image: assets/img/team/kaylene-profile.png
+      bio: "Helps clients navigate home-finance enquiries and prepare for lender assessment."
+      social:
+        - url: tel:+27628750066
+          icon: fas fa-phone
+        - url: mailto:Kaylene.firstclass@evogroup.co.za?subject=First Class Finance Website Enquiry
+          icon: fas fa-envelope
+        - url: https://wa.me/+27628750066
+          icon: fab fa-whatsapp
+
+faq:
+  title: "Home Loan Questions"
+  text: "Straight answers to common bond application questions."
+  section: home-loan-faq
+  list:
+    - question: "How does home-loan pre-qualification work?"
+      answer: "Pre-qualification is an early affordability discussion based on information such as income, expenses, credit profile and deposit. It helps you plan before making an offer, but it is not a final loan approval."
+    - question: "What documents are usually needed for a bond application?"
+      answer: "Banks commonly request identity documents, recent payslips or income proof, bank statements, details of monthly expenses, the signed Offer to Purchase and property information. Self-employed applicants may need additional business and tax documents."
+    - question: "How long does bond approval take?"
+      answer: "Timing varies by lender, application complexity and document readiness. A complete application can move faster, but final approval and registration remain subject to bank and conveyancing processes."
+    - question: "Can self-employed applicants qualify for a home loan?"
+      answer: "Yes, self-employed applicants can apply. Lenders usually require more detailed income and business documentation to assess affordability and risk."
+    - question: "Does making an enquiry guarantee approval?"
+      answer: "No. First Class Finance can help prepare and submit an application, but credit approval, rates and conditions are decided by the lender."
+    - question: "Is First Class Finance a lender?"
+      answer: "No. First Class Finance is a bond origination and home-loan assistance service. We help clients prepare applications and compare lender responses."
+
+testimonials:
+  title: "TESTIMONIALS"
+  text: ""
+  section: testimonials
+  people: []
+
+contact:
+  title: "Get in Touch"
+  text: "Ask a home-loan question, request pre-qualification guidance or start a bond enquiry."
+  section: contact
+  office_hours:
+    title: "Office Hours"
+    lines:
+      - "OPEN : 9 AM - 5 PM, MON to FRI"
+      - "CLOSED : Sat, Sun & Public Holidays"
+
+footer:
+  legal: "Powered by evo Home Loans"
+  social:
+    - url: https://www.instagram.com/firstclassfinancesa
+      icon: "fab fa-instagram"
+    - url: https://www.tiktok.com/@firstclassfinancesa
+      icon: "fab fa-tiktok"
